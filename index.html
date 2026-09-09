@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Who's the Strongest?</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!-- OPENING SCREEN -->
+    <!-- ================================= -->
+
+    <section id="intro-screen" class="screen">
+
+        <div class="intro-content">
+
+            <p class="small-heading">
+                THE FINAL FAMILY TRIAL
+            </p>
+
+            <h1>
+                WHO'S THE<br>
+                STRONGEST?
+            </h1>
+
+            <p class="subtitle">
+                Five siblings. Countless arguments. One final answer.
+            </p>
+
+            <button id="enter-button">
+                ENTER THE BATTLE
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- INTRODUCTION SCREEN -->
+    <!-- ================================= -->
+
+    <section id="introduction-screen" class="screen hidden">
+
+        <div class="intro-content">
+
+            <p class="small-heading">
+                THE COMPETITORS
+            </p>
+
+            <h2>
+                Before the battle begins...
+            </h2>
+
+            <p class="subtitle">
+                Five siblings have entered the arena.
+                Only one will be remembered as the strongest.
+            </p>
+
+            <button id="continue-button">
+                MEET THE COMPETITORS
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- AMISHA-SAN -->
+    <!-- ================================= -->
+
+    <section id="amisha-screen" class="screen hidden">
+
+        <div class="character-content">
+
+            <p class="small-heading reveal-amisha">
+                COMPETITOR 01
+            </p>
+
+            <h2 class="reveal-amisha">
+                AMISHA-SAN
+            </h2>
+
+            <p class="anime-title reveal-amisha">
+                THE TINY ARCANE ELDER
+            </p>
+
+
+            <div class="character-box reveal-amisha">
+
+                <img
+                    src="images/amisha.jpg"
+                    alt="Amisha-san"
+                >
+
+            </div>
+
+
+            <div class="character-info">
+
+                <p class="reveal-amisha">
+                    <strong>RANK:</strong>
+                    Oldest Sibling
+                </p>
+
+                <p class="reveal-amisha">
+                    <strong>CLASS:</strong>
+                    Tan Tan Dhol
+                </p>
+
+                <p class="reveal-amisha">
+                    <strong>HEIGHT:</strong>
+                    Compact Legendary Edition
+                </p>
+
+                <p class="reveal-amisha">
+                    <strong>SPECIAL ABILITY:</strong>
+                    TANKAMBHASUM
+                </p>
+
+                <p class="reveal-amisha">
+                    <strong>ABILITY:</strong>
+                    A mysterious spell capable of defeating
+                    anyone weaker than her.
+                </p>
+
+                <p class="reveal-amisha">
+                    <strong>WEAKNESS:</strong>
+                    Being reminded that she's the oldest.
+                </p>
+
+            </div>
+
+
+            <p class="character-quote reveal-amisha">
+                "Do not mistake my size for a lack of power."
+            </p>
+
+
+            <button id="amisha-next-button" class="reveal-amisha">
+                NEXT COMPETITOR
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- AASMAN-KUN -->
+    <!-- ================================= -->
+
+    <section id="akash-screen" class="screen hidden">
+
+        <div class="character-content">
+
+            <p class="small-heading reveal-akash">
+                COMPETITOR 02
+            </p>
+
+            <h2 class="reveal-akash">
+                AASMAN-KUN
+            </h2>
+
+            <p class="anime-title reveal-akash">
+                THE FORMERLY TINY TYRANT
+            </p>
+
+
+            <div class="character-box reveal-akash">
+
+                <img
+                    src="images/aasman.jpg"
+                    alt="Aasman-kun"
+                >
+
+            </div>
+
+
+            <div class="character-info">
+
+                <p class="reveal-akash">
+                    <strong>TITLE:</strong>
+                    The Formerly Tiny Tyrant
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>RANK:</strong>
+                    HPKS — 1st Form
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>CLASS:</strong>
+                    Chugalkhor
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>HEIGHT:</strong>
+                    Once Compact — Now Fully Evolved
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>SPECIAL ABILITY:</strong>
+                    TERROR TERROR
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>ABILITY:</strong>
+                    Can unleash an overwhelming barrage
+                    of attacks with absolutely no warning.
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>PASSIVE TRAIT:</strong>
+                    Loses to the great Akky-kun
+                    in arm wrestling.
+                </p>
+
+                <p class="reveal-akash">
+                    <strong>WEAKNESS:</strong>
+                    MINU (me nu)
+                </p>
+
+            </div>
+
+
+            <p class="character-quote reveal-akash">
+                "You laughed when I was small. Look at me now."
+            </p>
+
+
+            <button id="akash-next-button" class="reveal-akash">
+                NEXT COMPETITOR
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- AKANKSHA-SAN -->
+    <!-- ================================= -->
+
+    <section id="akanksha-screen" class="screen hidden">
+
+        <div class="character-content">
+
+            <p class="small-heading reveal-akanksha">
+                COMPETITOR 03
+            </p>
+
+            <h2 class="reveal-akanksha">
+                AKANKSHA-SAN
+            </h2>
+
+            <p class="anime-title reveal-akanksha">
+                A.K.A. UNDERWEARNI
+            </p>
+
+
+            <div class="character-box reveal-akanksha">
+
+                <img
+                    src="images/akanksha.jpg"
+                    alt="Akanksha-san"
+                >
+
+            </div>
+
+
+            <div class="character-info">
+
+                <p class="reveal-akanksha">
+                    <strong>RANK:</strong>
+                    HPKS — 2nd Form
+                </p>
+
+                <p class="reveal-akanksha">
+                    <strong>CLASS:</strong>
+                    Bhramachari
+                </p>
+
+                <p class="reveal-akanksha">
+                    <strong>HEIGHT:</strong>
+                    Average
+                </p>
+
+                <p class="reveal-akanksha">
+                    <strong>SPECIAL ABILITY:</strong>
+                    THUSKI
+                </p>
+
+                <p class="reveal-akanksha">
+                    <strong>ABILITY:</strong>
+                    Can release a terrifying fictional gas
+                    that overwhelms opponents.
+                </p>
+
+                <p class="reveal-akanksha">
+                    <strong>WEAKNESS:</strong>
+                    Her ability becomes useless when her
+                    opponent wears a mask.
+                </p>
+
+            </div>
+
+
+            <p class="character-quote reveal-akanksha">
+                "You should have brought a mask."
+            </p>
+
+
+            <button id="akanksha-next-button" class="reveal-akanksha">
+                NEXT COMPETITOR
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- ABHI-KUN -->
+    <!-- ================================= -->
+
+    <section id="abhi-screen" class="screen hidden">
+
+        <div class="character-content">
+
+            <p class="small-heading reveal-abhi">
+                COMPETITOR 04
+            </p>
+
+            <h2 class="reveal-abhi">
+                ABHI-KUN
+            </h2>
+
+            <p class="anime-title reveal-abhi">
+                A.K.A. DUBBA
+            </p>
+
+
+            <div class="character-box reveal-abhi">
+
+                <img
+                    src="images/abhi.jpg"
+                    alt="Abhi-kun"
+                >
+
+            </div>
+
+
+            <div class="character-info">
+
+                <p class="reveal-abhi">
+                    <strong>RANK:</strong>
+                    Second Strongest
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>CLASS:</strong>
+                    Tilakdhari
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>HEIGHT:</strong>
+                    Average
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>SPECIAL ABILITY:</strong>
+                    THE ALL-SEEING SCOPE
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>ABILITY:</strong>
+                    Can observe targets from extraordinary
+                    distances through his mysterious
+                    spying objects.
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>ULTIMATE POWER:</strong>
+                    Possesses enough power to destroy
+                    the world — but someone stronger
+                    would never allow it.
+                </p>
+
+                <p class="reveal-abhi">
+                    <strong>WEAKNESS:</strong>
+                    Toilet Burger
+                </p>
+
+            </div>
+
+
+            <p class="character-quote reveal-abhi">
+                "Nothing escapes my sight."
+            </p>
+
+
+            <button id="abhi-next-button" class="reveal-abhi">
+                NEXT COMPETITOR
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- AKKY-KUN -->
+    <!-- ================================= -->
+
+    <section id="akky-screen" class="screen hidden">
+
+        <div class="character-content">
+
+            <p class="small-heading reveal-akky">
+                COMPETITOR 05
+            </p>
+
+            <h2 class="reveal-akky">
+                AKKY-KUN
+            </h2>
+
+            <p class="anime-title reveal-akky">
+                A.K.A. GOD
+            </p>
+
+
+            <div class="character-box reveal-akky">
+
+                <img
+                    src="images/akky.jpg"
+                    alt="Akky-kun"
+                >
+
+            </div>
+
+
+            <div class="character-info">
+
+                <p class="reveal-akky">
+                    <strong>RANK:</strong>
+                    Strongest Person Alive —
+                    Capable of defeating even Gods
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>CLASS:</strong>
+                    Kanyakumari
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>HEIGHT:</strong>
+                    Tallest Among All
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>SPECIAL ABILITY:</strong>
+                    REALITY COMMAND
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>ABILITY:</strong>
+                    Whatever he says becomes reality.
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>ABILITY STATUS:</strong>
+                    ERROR — TRUE ABILITY UNKNOWN
+                </p>
+
+                <p class="reveal-akky">
+                    <strong>WEAKNESS:</strong>
+                    No weaknesses detected.
+                </p>
+
+            </div>
+
+
+            <p class="character-quote reveal-akky">
+                "Why fight reality when reality listens to me?"
+            </p>
+
+
+            <button id="akky-next-button" class="reveal-akky">
+                BEGIN THE BATTLE
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- BATTLE SCREEN -->
+    <!-- ================================= -->
+
+    <section id="battle-screen" class="screen hidden">
+
+        <div class="battle-content">
+
+            <p class="small-heading">
+                THE FAMILY ARENA
+            </p>
+
+            <h2 id="battle-title">
+                BATTLE ROYALE
+            </h2>
+
+            <div id="battle-dialogue">
+
+                <p>
+                    Five competitors stand in the arena.
+                </p>
+
+                <p>
+                    Nobody moves.
+                </p>
+
+                <p>
+                    Then...
+                </p>
+
+                <h3>
+                    LET THE BATTLE BEGIN.
+                </h3>
+
+            </div>
+
+            <button id="battle-next-button">
+                NEXT
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- FINAL BATTLE -->
+    <!-- ================================= -->
+
+    <section id="final-battle-screen" class="screen hidden">
+
+        <div class="battle-content">
+
+            <p class="small-heading">
+                THE FINAL BATTLE
+            </p>
+
+            <h2>
+                ABHI-KUN VS AKKY-KUN
+            </h2>
+
+            <div id="final-dialogue">
+
+                <p>
+                    ABHI-KUN:
+                    "No... it can't be."
+                </p>
+
+            </div>
+
+            <button id="final-next-button">
+                CONTINUE
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- WINNER -->
+    <!-- ================================= -->
+
+    <section id="winner-screen" class="screen hidden">
+
+        <div class="winner-content">
+
+            <p class="small-heading">
+                THE ANSWER HAS BEEN REVEALED
+            </p>
+
+            <h1>
+                THERE CAN<br>
+                ONLY BE ONE.
+            </h1>
+
+            <p class="winner-subtitle">
+                Among all five competitors...
+            </p>
+
+            <h2>
+                AKKY-KUN
+            </h2>
+
+            <p class="winner-quote">
+                "There can only be one strongest."
+            </p>
+
+            <p class="winner-final-line">
+                And the strongest guy was...
+                <strong>AKKY-KUN.</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

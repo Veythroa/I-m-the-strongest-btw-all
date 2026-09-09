@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: #050505;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+}
+
+
+/* ================================= */
+/* SCREENS */
+/* ================================= */
+
+.screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* ================================= */
+/* GENERAL INTRO */
+/* ================================= */
+
+.intro-content {
+
+    width: 100%;
+
+    max-width: 850px;
+
+}
+
+
+.small-heading {
+
+    color: #777777;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.3em;
+
+    margin-bottom: 30px;
+
+}
+
+
+h1 {
+
+    font-size: clamp(3rem, 10vw, 8rem);
+
+    line-height: 0.95;
+
+    letter-spacing: 0.08em;
+
+    margin: 0;
+
+}
+
+
+h2 {
+
+    font-size: clamp(2rem, 5vw, 4rem);
+
+    font-weight: normal;
+
+}
+
+
+h3 {
+
+    font-size: 2rem;
+
+    letter-spacing: 0.08em;
+
+}
+
+
+.subtitle {
+
+    color: #aaaaaa;
+
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+
+    margin: 35px 0;
+
+}
+
+
+
+/* ================================= */
+/* BUTTONS */
+/* ================================= */
+
+button {
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #666666;
+
+    padding: 16px 30px;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 0.12em;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    background: white;
+
+    color: black;
+
+    transform: translateY(-4px);
+
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+
+/* ================================= */
+/* CHARACTER */
+/* ================================= */
+
+.character-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    text-align: center;
+
+}
+
+
+.anime-title {
+
+    color: #aaaaaa;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    letter-spacing: 0.1em;
+
+}
+
+
+
+/* ================================= */
+/* CHARACTER IMAGE */
+/* ================================= */
+
+.character-box {
+
+    width: 280px;
+
+    height: 280px;
+
+    margin: 30px auto;
+
+    border: 2px solid #555555;
+
+    overflow: hidden;
+
+}
+
+
+.character-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ================================= */
+/* CHARACTER INFORMATION */
+/* ================================= */
+
+.character-info {
+
+    text-align: left;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border-left: 2px solid #555555;
+
+}
+
+
+.character-info p {
+
+    font-size: 1rem;
+
+    margin: 12px 0;
+
+    line-height: 1.5;
+
+}
+
+
+.character-info strong {
+
+    color: white;
+
+}
+
+
+.character-quote {
+
+    color: #cccccc;
+
+    font-style: italic;
+
+    margin: 30px 0;
+
+}
+
+
+
+/* ================================= */
+/* LINE-BY-LINE REVEAL */
+/* ================================= */
+
+.reveal-amisha,
+.reveal-akash,
+.reveal-akanksha,
+.reveal-abhi,
+.reveal-akky {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+}
+
+
+.reveal-amisha.show,
+.reveal-akash.show,
+.reveal-akanksha.show,
+.reveal-abhi.show,
+.reveal-akky.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+
+/* ================================= */
+/* BATTLE */
+/* ================================= */
+
+.battle-content {
+
+    width: 100%;
+
+    max-width: 850px;
+
+}
+
+
+#battle-dialogue,
+#final-dialogue {
+
+    margin: 40px auto;
+
+    max-width: 700px;
+
+}
+
+
+#battle-dialogue p,
+#final-dialogue p {
+
+    color: #cccccc;
+
+    font-size: 1.25rem;
+
+    line-height: 1.8;
+
+    margin: 20px 0;
+
+}
+
+
+#battle-dialogue h3 {
+
+    margin-top: 40px;
+
+}
+
+
+
+/* ================================= */
+/* WINNER */
+/* ================================= */
+
+.winner-content {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    text-align: center;
+
+    animation: winnerAppear 2s ease;
+
+}
+
+
+.winner-content h2 {
+
+    font-size: clamp(3rem, 10vw, 8rem);
+
+    letter-spacing: 0.15em;
+
+    margin: 30px 0;
+
+}
+
+
+.winner-subtitle {
+
+    color: #aaaaaa;
+
+    font-size: 1.3rem;
+
+}
+
+
+.winner-quote {
+
+    color: #cccccc;
+
+    font-size: 1.3rem;
+
+    font-style: italic;
+
+    margin: 40px 0;
+
+}
+
+
+.winner-final-line {
+
+    color: #888888;
+
+    font-size: 1rem;
+
+}
+
+
+
+/* ================================= */
+/* ANIMATIONS */
+/* ================================= */
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes winnerAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.8);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
